@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "helvetica";
+    src: local("Helvetica"), url("./Helvetica.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "helvetica-bold";
+    src: local("Helvetica-Bold"), url("./Helvetica-Bold.ttf") format("truetype");
+  }
+  
+  body{
+    background-color: #1c1c1c
+  }
+  .entirePageContainer{
+      display: flex;  /* This makes the entire page a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    height: 100%;  /* Take full viewport height */
+    padding: 20px;
+  }
+  
+  .optionButton{
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    background-color: #1c1c1c;
+    font-family: helvetica-bold;
+    border-radius: 15px;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #212121;
+    letter-spacing:-1.5px;
+    transition: 0.3s;
+  }
+  
+  .playButton{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background-color: rebeccapurple;
+    font-family: helvetica-bold;
+    border-radius: 15px;
+    width: 62.5px;
+    height: 50px;
+    border: 1px solid #212121;
+    letter-spacing:-1.5px;
+    position: absolute;
+    left:  93.75px;
+    bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .nextButton{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background-color: #212121;
+    font-family: helvetica-bold;
+    border-radius: 15px;
+    width: 62.5px;
+    height: 50px;
+   /* border: 2px solid #1c1c1c;*/
+    border:none;
+    letter-spacing:-1.5px;
+    position: absolute;
+    left:  166.25px;
+    bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .previousButton{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background-color: #212121;
+    font-family: helvetica-bold;
+    border-radius: 15px;
+    width: 62.5px;
+    height: 50px;
+    /* border: 2px solid #1c1c1c;*/
+    border:none;
+    letter-spacing:-1.5px;
+    position: absolute;
+    left:  21.25px;
+    bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .nextButton:hover,.previousButton:hover{
+    color: rebeccapurple;
+  }
+  .playButton:hover{
+    background-color: #1c1c1c ;
+    color: rebeccapurple;
+  }
+  
+  .optionButton:hover{
+    background-color: rebeccapurple;
+  }
+  
+  .secondaryPageContainer{
+    background-color: #212121;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;  /* This makes the secondary container a flex container */
+    flex-direction: column;  /* This aligns the inner content vertically */
+    width: 100%;
+  }
+  
+  h1{
+    font-family: helvetica-bold;
+    color: white;
+    letter-spacing: -2px;
+    margin-left: 10px;
+  }
+  h2{
+    font-family: helvetica-bold;
+    color: white;
+    font-size: 30px;
+    letter-spacing: -2px;
+    background-color: #1c1c1c;
+    border: 2px solid rebeccapurple;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 5px rebeccapurple;
+    text-align: center;
+  }
+  
+  h3{
+    font-family: helvetica-bold;
+    color: white;
+    font-size: 18px;
+    letter-spacing: -2px;
+    
+    margin-left: 25px;
+  
+  }
+  .songScroll,.playingCurrently,.options{
+    border-radius: 15px;
+    margin: 5px;
+  }
+  .contentflexbox{
+    display: flex; /* Align sideBoxes and songScroll horizontally */
+    flex: 1;
+    margin-top: 20px;
+  }
+  
+  .sideBoxes{
+  
+  }
+  
+  .songScroll{
+    border: 3px solid #1c1c1c;
+    height: 510px;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .playingCurrently{
+    border: 3px solid #1c1c1c;
+    height: 300px;
+    width: 250px;
+    position: relative;
+  }
+  
+  .options{
+    border: 3px solid #1c1c1c;
+    height: 200px;
+    width: 250px;
+  }
+  
+  .sortByDropdown{
+    margin-left: 10px;
+  }
+  
+  .sortByButton{
+    font-family: helvetica-bold;
+    background:#212121;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid white;
+  }
+  
+  .sortByButton:hover{
+    background-color: rebeccapurple;
+  }
+  
+  .dropdownOptions{
+    display: none;
+  }
+  
+  #searchBar{
+    text-align: left;
+  }
+  
+  .songScroll{
+    
+  }
+  
+  .contentBox{
+    font-family: "helvetica-bold";
+    color: white;
+    background-color: #212121;
+    border-radius: 15px;
+    padding: 0px;
+    margin-left: 10px;
+    text-align: center;
+    resize: none;
+    width: 85%;
+    height: 20px;
+  
+  }
