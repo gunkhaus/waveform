@@ -164,12 +164,18 @@
     margin-top: 20px;
   }
   
+  .title{
+    margin-left: 10px;
+    position: static;
+    z-index: 10;
+  }
   
+
   .songScroll{
     border: 3px solid #1c1c1c;
     height: 510px;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
   }
   
   .playingCurrently{
@@ -189,28 +195,56 @@
     position: relative; /* Ensure the dropdown aligns properly with its button */
   }
   
+  .sortByMainButton {
+    position: relative;
+    font-family: helvetica-bold;
+    background: #212121;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+  }
+
+  .sortByMainButton:hover{
+    background-color:rebeccapurple
+  }
+
   .sortByButton {
     position: relative;
     font-family: helvetica-bold;
     background: #212121;
     color: white;
     border-radius: 15px;
-    border: 3px solid white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+
+  .sortByArrow{
+    position: relative;
+    font-family: helvetica-bold;
+    background: #212121;
+    color: rebeccapurple;
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 0px;
+
+    transition-duration: 0.4s;
   }
   
   .dropdownOptions {
     display: flex;
     flex-direction: row; /* Horizontal layout */
-    background-color: #212121;
-    border-radius: 10px;
-    padding: 10px;
+    margin-top: -21px;
+    margin-left: 70px;
     gap: 10px;
     position: absolute;
     top: 100%;
     left: 0;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
+    box-shadow: 0px 5px rebeccapurple;
   }
   
   .sortByDropdown.open .dropdownOptions {
@@ -225,7 +259,7 @@
     flex-direction: column;
   }
   .sortByButton:hover{
-    background-color: rebeccapurple;
+    color: rebeccapurple;
   }
 
   
@@ -234,10 +268,8 @@
     text-align: left;
   }
   
-  .songScroll{
-    
-  }
-  
+
+ 
   .contentBox{
     font-family: "helvetica-bold";
     color: white;
@@ -306,6 +338,10 @@
 
 .songScrollButtons.active {
   background-color: #2e1745; /* or any highlight color */
+}
+
+.sinWave{
+  
 }
 
 :root {

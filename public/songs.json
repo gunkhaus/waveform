@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "title": "DITTO",
+        "artist":"Aries",
+        "cover":"ditto.jpeg"
+    },
+
+    {
+        "id": 2,
+        "title": "GODSTAINED",
+        "artist":"Quadeca",
+        "cover":"godstained.png"
+    },
+
+    {
+        "id": 3,
+        "title": "ik",
+        "artist":"Glaive",
+        "cover":"ik.jpg"
+    },
+
+    {
+        "id": 4,
+        "title": "deepfake",
+        "artist":"brakence",
+        "cover":"deepfake.jpeg"
+    },
+
+    {
+        "id": 5,
+        "title": "Sad Machine",
+        "artist":"Porter Robinson",
+        "cover":"Sad Machine.jpeg"
+    },
+
+    {
+        "id": 6,
+        "title": "Float On",
+        "artist":"Modest Mounse",
+        "cover":"Float On.jpeg"
+    }
+]

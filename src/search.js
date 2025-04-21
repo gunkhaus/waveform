@@ -3,7 +3,7 @@ import { useState } from "react";
 import SortBy from "./sortBy";
 import Navbar from "./navigationbar";
 import CurrentlyPlaying from "./currentlyplayingwindow";
-
+import SineWave from "./sinewave";
 
 function Search() {
     //use state for searching songs
@@ -18,11 +18,14 @@ function Search() {
     return (
         <div className="entirePageContainer">
           <div className="secondaryPageContainer">
-            <h1>waveform</h1> 
-    
-            {/*sortBy Dropdown Menu*/}
-            < SortBy />
-    
+          <div className="headers">
+          <div>
+            <h1 className="logo">waveform</h1> 
+            
+          </div>
+          <SineWave/>
+        </div>
+        < SortBy />
             <div className="contentflexbox">
               
               <div className="sideBoxes"> {/* div to define the 2 boxes on the left*/}

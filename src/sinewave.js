@@ -35,11 +35,12 @@ function SineWave() {
         const canvas = canvasRef.current;       //holds canvas DOM 
         const c = canvas.getContext('2d');      //set up enviorment for 2d drawing instead of 3d
 
-        canvas.width = window.innerWidth-20;
+        canvas.width = window.innerWidth-230;
         canvas.height = window.innerHeight-900;
 
         const animate = () => {
 
+            canvas.width = window.innerWidth-230;
             phaseRef.current += 0.05; // Adjust for speed
             drawSineWave(c, canvas.width, canvas.height, phaseRef.current);
             animationRef.current = requestAnimationFrame(animate);
@@ -52,7 +53,7 @@ function SineWave() {
     }, []);
 
     return (
-        <div>
+        <div className='sinWave'>
             {/*return a refrence to the canvas element- this actually displays the goods*/}
             <canvas ref={canvasRef} /> 
         </div>

@@ -13,32 +13,33 @@ function Home() {
       <div className="secondaryPageContainer">
         <div className="headers">
           <div>
-            <h1>waveform</h1> 
-            {/*sortBy Dropdown Menu*/}
-            < SortBy />
+            <h1 className="logo">waveform</h1> 
+            
           </div>
           <SineWave/>
         </div>
+        {/*sortBy Dropdown Menu*/}
+        < SortBy />
         < modeSwitch />
         <div className="contentflexbox">
         
           <div className="sideBoxes"> {/* div to define the 2 boxes on the left*/}
             {/*navigationbar*/}
             < Navbar />
-            
-
             {/*display currently playing song*/}
+            
             < CurrentlyPlaying />
-
           </div>
 
+    
           {/*scroll songs*/}
           <div className="songScroll">
-            <h2>home</h2>
-            <ScrollSongs/>
+            <h2 className="title">home</h2>
+       
+              <ScrollSongs/>
+            
           </div>
         </div>
-          
       </div>
     </div>
   );

@@ -6,11 +6,12 @@ function SortBy() {
 
   return (
     <div className="sortByDropdown">
-      <button onClick={showText} className="dropdown-toggle" type="button">sort by  ↕</button>
+      <button onClick={showText} className="sortByMainButton" type="button"> sort by </button>
       <div className="dropdownOptions" id="dropdownOptions">
-        <a className="dropdown-item" href="/#">Name</a>
-        <a className="dropdown-item" href="/#">Popularity</a>
-        <a className="dropdown-item" href="/#">Genre</a>
+        <p className="sortByArrow" >→</p>
+        <a className="sortByButton" href="/#">Name</a>
+        <a className="sortByButton" href="/#">Popularity</a>
+        <a className="sortByButton" href="/#">Genre</a>
       </div>
     </div>
   );
